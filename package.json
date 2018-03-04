@@ -1,8 +1,14 @@
 {
   "name": "curldiff",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "files": [
+    "./index.js"
+  ],
+  "bin": {
+    "curldiff": "./index.js"
+  },
   "dependencies": {
     "caporal": "^0.9.0",
     "deep-object-diff": "^1.0.4",
