@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import parseCurl from 'parse-curl'
-import { detailedDiff } from 'deep-object-diff'
 import deepEqual from 'deep-equal'
 import cookies from 'cookie'
 import Accordion from './Accordion'
@@ -72,19 +71,21 @@ export default class DiffResults extends Component {
     ) {
       const parsedA = parseCurl(nextProps.curlCallA)
       const parsedB = parseCurl(nextProps.curlCallB)
-      console.log(nextProps.curlCallA, nextProps.curlCallB)
 
       this.setState({
         parsedCallA: parsedA,
         parsedCallB: parsedB,
-        resultDiff: detailedDiff(parsedA, parsedB),
       })
     }
   }
 
   render() {
-    const { withRef } = this.props
+    const { withRef, curlCallA, curlCallB } = this.props
     const { parsedCallA, parsedCallB } = this.state
+
+    if (!curlCallA || !curlCallB) {
+      return null
+    }
 
     return (
       <div ref={ withRef } className="results-container">
