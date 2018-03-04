@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextArea from './TextArea'
 import DiffResults from './DiffResults'
+import parseCurl from 'parse-curl'
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,11 @@ class App extends Component {
   }
 
   handleSubmit = () => {
+    if (!parseCurl(this.tempCurlCallA) || !parseCurl(this.tempCurlCallB)) {
+      alert('Please enter valid curl calls on RHS and the LHS/')
+      return
+    }
+
     this.setState({
       curlCallA: this.tempCurlCallA,
       curlCallB: this.tempCurlCallB,
