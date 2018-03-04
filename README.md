@@ -1,7 +1,11 @@
 # curldiff
+
+![npm (scoped)](https://img.shields.io/npm/v/curldiff.svg)
+![npm](https://img.shields.io/npm/l/curldiff.svg)
+
 Not sure why a network request seems to be working, while another seemingly similar request stubbornly refuses to? 
 
-`curldiff` them!
+Just `curldiff` them!
 
 `curldiff` is an interactive utility to compare two curl requests, and tell you what exactly you're screwing up.
 
