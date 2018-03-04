@@ -1,0 +1,13 @@
+{
+  "name": "curldiff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "caporal": "^0.9.0",
+    "deep-object-diff": "^1.0.4",
+    "parse-curl": "^0.2.6",
+    "update-notifier": "^2.3.0",
+    "variable-diff": "^1.1.0"
+  }
+}

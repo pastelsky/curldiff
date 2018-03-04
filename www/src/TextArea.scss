@@ -1,0 +1,104 @@
+@import '../node_modules/codemirror/lib/codemirror.css';
+@import '../node_modules/codemirror/theme/material.css';
+
+.textarea-container {
+  .CodeMirror {
+    font-family: 'Operator Mono SSm', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+    color: rgb(153, 157, 162);
+    padding: 12px 16px 40px;
+    transition: background 0.1s, box-shadow 0.2s;
+    background: #fcfcfc;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.015), 0 4px 12px rgba(0,0,0,0.02);
+    font-size: 0.7rem;
+  }
+
+  .CodeMirror-focused {
+    box-shadow: 0 0px 3px rgba(0,0,0,0.02), 0 4px 15px rgba(0,0,0,0.04);
+    background: white;
+  }
+
+  .CodeMirror-gutters {
+    background: #263238;
+    color: rgb(83, 127, 126);
+    border: none;
+  }
+  .CodeMirror-guttermarker, .CodeMirror-guttermarker-subtle, .CodeMirror-linenumber {
+    color: rgb(83, 127, 126);
+  }
+  .CodeMirror-cursor {
+    border-left: 10px solid transparentize(#667280, 0.75);
+  }
+  div.CodeMirror-selected {
+    background: rgba(99, 156, 225, 0.14);
+  }
+  .cm-s-material.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.10);
+  }
+  .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection {
+    background: rgba(255, 255, 255, 0.10);
+  }
+  .CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection {
+    background: rgba(255, 255, 255, 0.10);
+  }
+
+  .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0);
+  }
+  .cm-keyword {
+    color: rgba(199, 146, 234, 1);
+  }
+  .cm-operator {
+    color: rgba(233, 237, 237, 1);
+  }
+  .cm-variable-2 {
+    color: #80CBC4;
+  }
+  .cm-variable-3, .cm-type {
+    color: magenta;
+  }
+  .cm-builtin {
+    color: #565961;
+    font-weight: 600;
+  }
+  .cm-atom {
+    color: #F77669;
+  }
+  .cm-number {
+    color: #F77669;
+  }
+  .cm-def {
+    color: rgba(233, 237, 237, 1);
+  }
+  .cm-string {
+    color: #73aae6;
+    //font-size: 95%;
+  }
+  .cm-string-2 {
+    color: #80CBC4;
+  }
+  .cm-comment {
+    color: #546E7A;
+  }
+  .cm-variable {
+    color: #82B1FF;
+  }
+
+  .cm-attribute {
+    color: #80CBAE;
+  }
+  .cm-property {
+    color: #80CBAE;
+  }
+  .cm-variable-3, .cm-type {
+    color: #DECB6B;
+  }
+  .cm-error {
+    color: rgba(255, 255, 255, 1.0);
+    background-color: #EC5F67;
+  }
+
+  .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+  }
+}

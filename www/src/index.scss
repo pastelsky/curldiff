@@ -1,0 +1,12 @@
+@import "../node_modules/spectre.css";
+@import "../node_modules/spectre.css/dist/spectre-icons.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* + * {
+  box-sizing: border-box;
+}

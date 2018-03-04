@@ -1,0 +1,93 @@
+.results-container .accordion {
+  text-align: center; }
+
+.results-container .accordion-arrow {
+  opacity: 0.3;
+  margin-right: 0.2rem;
+  margin-left: -0.2rem; }
+
+.results-container .accordion-header {
+  text-align: center;
+  background: rgba(102, 113, 137, 0.1);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 0 0.6rem;
+  display: inline-block;
+  width: 10rem;
+  cursor: pointer; }
+  .results-container .accordion-header:hover {
+    background: rgba(102, 113, 137, 0.15); }
+
+.results-container .accordion-body {
+  position: relative;
+  padding-bottom: 1rem; }
+  .results-container .accordion-body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    border-left: 1px dotted rgba(102, 113, 137, 0.2); }
+
+.results-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: center; }
+
+.results-same-text {
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgba(102, 113, 137, 0.5); }
+
+.result-line {
+  font-family: 'Operator Mono SSm', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace; }
+  .result-line + .result-line {
+    margin-top: 8px; }
+  .result-line ::selection {
+    background: rgba(0, 0, 0, 0.07); }
+
+.result-lhs {
+  text-align: right; }
+
+.result-rhs {
+  text-align: left; }
+
+.result-line-heading {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: 0.25rem;
+  background: #F0F2F5;
+  z-index: 1;
+  padding: 2px 0; }
+
+.result-added, .result-removed, .result-modified {
+  padding: 1px 12px;
+  border-radius: 2px;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 100%; }
+
+.result-added {
+  background: #caeddb;
+  color: #539875; }
+
+.result-removed {
+  background: #fad6d4;
+  color: #cc3e36; }
+
+.result-modified {
+  background: #faf0c8;
+  color: #c3a633; }
+  .result-modified .patch-added,
+  .result-modified .patch-removed {
+    background: #f8eab1; }
+
+.result-method {
+  color: rgba(102, 113, 137, 0.7);
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600; }

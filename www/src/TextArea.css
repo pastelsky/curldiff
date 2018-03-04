@@ -1,0 +1,94 @@
+@import url(../node_modules/codemirror/lib/codemirror.css);
+@import url(../node_modules/codemirror/theme/material.css);
+.textarea-container .CodeMirror {
+  font-family: 'Operator Mono SSm', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  color: #999da2;
+  padding: 12px 16px 40px;
+  transition: background 0.1s, box-shadow 0.2s;
+  background: #fcfcfc;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.015), 0 4px 12px rgba(0, 0, 0, 0.02);
+  font-size: 0.7rem; }
+
+.textarea-container .CodeMirror-focused {
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.02), 0 4px 15px rgba(0, 0, 0, 0.04);
+  background: white; }
+
+.textarea-container .CodeMirror-gutters {
+  background: #263238;
+  color: #537f7e;
+  border: none; }
+
+.textarea-container .CodeMirror-guttermarker, .textarea-container .CodeMirror-guttermarker-subtle, .textarea-container .CodeMirror-linenumber {
+  color: #537f7e; }
+
+.textarea-container .CodeMirror-cursor {
+  border-left: 10px solid rgba(102, 114, 128, 0.25); }
+
+.textarea-container div.CodeMirror-selected {
+  background: rgba(99, 156, 225, 0.14); }
+
+.textarea-container .cm-s-material.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1); }
+
+.textarea-container .CodeMirror-line::selection, .textarea-container .CodeMirror-line > span::selection, .textarea-container .CodeMirror-line > span > span::selection {
+  background: rgba(255, 255, 255, 0.1); }
+
+.textarea-container .CodeMirror-line::-moz-selection, .textarea-container .CodeMirror-line > span::-moz-selection, .textarea-container .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1); }
+
+.textarea-container .CodeMirror-activeline-background {
+  background: transparent; }
+
+.textarea-container .cm-keyword {
+  color: #c792ea; }
+
+.textarea-container .cm-operator {
+  color: #e9eded; }
+
+.textarea-container .cm-variable-2 {
+  color: #80CBC4; }
+
+.textarea-container .cm-variable-3, .textarea-container .cm-type {
+  color: magenta; }
+
+.textarea-container .cm-builtin {
+  color: #565961;
+  font-weight: 600; }
+
+.textarea-container .cm-atom {
+  color: #F77669; }
+
+.textarea-container .cm-number {
+  color: #F77669; }
+
+.textarea-container .cm-def {
+  color: #e9eded; }
+
+.textarea-container .cm-string {
+  color: #73aae6; }
+
+.textarea-container .cm-string-2 {
+  color: #80CBC4; }
+
+.textarea-container .cm-comment {
+  color: #546E7A; }
+
+.textarea-container .cm-variable {
+  color: #82B1FF; }
+
+.textarea-container .cm-attribute {
+  color: #80CBAE; }
+
+.textarea-container .cm-property {
+  color: #80CBAE; }
+
+.textarea-container .cm-variable-3, .textarea-container .cm-type {
+  color: #DECB6B; }
+
+.textarea-container .cm-error {
+  color: white;
+  background-color: #EC5F67; }
+
+.textarea-container .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important; }

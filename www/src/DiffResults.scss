@@ -1,0 +1,124 @@
+.results-container {
+  .accordion {
+    text-align: center;
+  }
+
+  .accordion-arrow {
+    opacity: 0.3;
+    margin-right: 0.2rem;
+    margin-left: -0.2rem;
+  }
+
+  .accordion-header {
+    text-align: center;
+    background: transparentize(#667189, 0.9);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.6rem;
+    display: inline-block;
+    width: 10rem;
+    cursor: pointer;
+
+    &:hover {
+      background: transparentize(#667189, 0.85);
+    }
+  }
+
+  .accordion-body {
+    position: relative;
+    padding-bottom: 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 50%;
+      border-left: 1px dotted transparentize(#667189, 0.8);
+    }
+  }
+}
+
+.results-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.results-same-text {
+  text-align: center;
+  font-size: 1.8rem;
+  color: transparentize(#667189, 0.5);
+}
+
+.result-line {
+  font-family: 'Operator Mono SSm', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  ::selection {
+    background: rgba(0, 0, 0, 0.07);
+  }
+}
+
+.result-lhs {
+  text-align: right;
+}
+
+.result-rhs {
+  text-align: left;
+}
+
+.result-line-heading {
+  position: relative;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: 0.25rem;
+  background: #F0F2F5;
+  z-index: 1;
+  padding: 2px 0;
+}
+
+.result-added, .result-removed, .result-modified {
+  padding: 1px 12px;
+  border-radius: 2px;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.result-added {
+  $bg: #caeddb;
+  background: $bg;
+  color: desaturate(darken($bg, 40%), 20%);
+}
+
+.result-removed {
+  $bg: #fad6d4;
+  background: $bg;
+  color: desaturate(darken($bg, 40%), 20%);
+}
+
+.result-modified {
+  $bg: #faf0c8;
+  background: $bg;
+  color: desaturate(darken($bg, 40%), 25%);
+
+  .patch-added,
+  .patch-removed {
+    background: darken($bg, 5%);
+  }
+}
+
+.result-method {
+  color: transparentize(#667189, 0.3);
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
